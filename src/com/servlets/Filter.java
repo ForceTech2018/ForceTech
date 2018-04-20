@@ -47,8 +47,13 @@ public class Filter implements javax.servlet.Filter {
         }
         else if(cook.getUser()==null || cook.getPass()==null) {  //daca nu sunt logat, sa ma redirec. pe index automat
             response.sendRedirect("/index.jsp");
+<<<<<<< HEAD
         }
         else if(cook.getNowReg().compareTo("1")==0) { response.sendRedirect("/profile.jsp");}  //este proaspat inregistrat, deci trebuie completat profilul mai intai
+=======
+    }
+        else if(cook.getNowReg().compareTo("1")==0) { response.sendRedirect("/profile.jsp");}
+>>>>>>> c6de897c4fd019f476e016ff204866c24aae092c
 
         chain.doFilter(request,response);
 

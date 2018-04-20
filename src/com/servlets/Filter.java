@@ -47,7 +47,7 @@ public class Filter implements javax.servlet.Filter {
         }
         else if(cook.getUser()==null || cook.getPass()==null) {
             response.sendRedirect("/index.jsp");
-        }
+    }
         else if(cook.getNowReg().compareTo("1")==0) { response.sendRedirect("/profile.jsp");}
 
         chain.doFilter(request,response);

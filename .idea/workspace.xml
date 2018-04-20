@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d0edfe5-cf4a-4c18-b6cb-f105b1c6d1e8" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebApp_war_exploded/CSS/profil.css" afterPath="$PROJECT_DIR$/out/artifacts/WebApp_war_exploded/CSS/profil.css" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> a7e749df3ade3f98ac4c837cb1adc23fe9d4fc56
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,6 +33,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="Filter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/servlets/Filter.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -40,6 +46,8 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> a7e749df3ade3f98ac4c837cb1adc23fe9d4fc56
       <file leaf-file-name="profile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/servlets/profile.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -55,8 +63,13 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="17">
               <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+=======
+            <state relative-caret-position="63">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+>>>>>>> a7e749df3ade3f98ac4c837cb1adc23fe9d4fc56
               <folding />
             </state>
           </provider>
@@ -878,13 +891,21 @@
       <workItem from="1524208402485" duration="80000" />
       <workItem from="1524209510849" duration="1315000" />
       <workItem from="1524212783204" duration="47000" />
+<<<<<<< HEAD
       <workItem from="1524212858699" duration="1305000" />
       <workItem from="1524214551791" duration="902000" />
+=======
+      <workItem from="1524212858699" duration="2142000" />
+>>>>>>> a7e749df3ade3f98ac4c837cb1adc23fe9d4fc56
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="165939000" />
+=======
+    <option name="totallyTimeSpent" value="165874000" />
+>>>>>>> a7e749df3ade3f98ac4c837cb1adc23fe9d4fc56
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1202,8 +1223,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebApp.iml">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="391">
           <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+=======
+        <state relative-caret-position="63">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+>>>>>>> a7e749df3ade3f98ac4c837cb1adc23fe9d4fc56
           <folding />
         </state>
       </provider>

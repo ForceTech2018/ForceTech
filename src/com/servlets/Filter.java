@@ -38,17 +38,17 @@ public class Filter implements javax.servlet.Filter {
         String pathgo=request.getRequestURI();
         if(pathgo.compareTo("/index.jsp")==0 || pathgo.compareTo("/")==0){
 
-            if(cook.getUser()==null || cook.getPass()==null){
+            if(cook.getUser()==null || cook.getPass()==null){  //getUser ia user-ul din baza de date si il verifica
                 request.setAttribute("verif","0");
             }
             else {
                 request.setAttribute("verif","1");
             }
         }
-        else if(cook.getUser()==null || cook.getPass()==null) {
+        else if(cook.getUser()==null || cook.getPass()==null) {  //daca nu sunt logat, sa ma redirec. pe index automat
             response.sendRedirect("/index.jsp");
         }
-        else if(cook.getNowReg().compareTo("1")==0) { response.sendRedirect("/profile.jsp");}
+        else if(cook.getNowReg().compareTo("1")==0) { response.sendRedirect("/profile.jsp");}  //este proaspat inregistrat, deci trebuie completat profilul mai intai
 
         chain.doFilter(request,response);
 

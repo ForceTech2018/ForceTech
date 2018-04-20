@@ -23,7 +23,7 @@ public class profile extends HttpServlet {
         CookiesClass cook = check.isLogged(request,response);
         UserData obj = new UserData();
         
-        if(cale.compareTo("/securityprofile")==0){
+        if(cale.compareTo("/securityprofile")==0){  //am dat Save din formularul din stanga
             System.out.println(cale);
             String avatar=request.getParameter("avatar");
             String nume=request.getParameter("firstname");

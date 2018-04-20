@@ -4,5 +4,5 @@
  */
 
 window.onload = function(){
-    if(errorLogin) alert(errorLogin);
+    if(errorLogin) alert(errorLogin); //daca errorLogin != NULL
 }

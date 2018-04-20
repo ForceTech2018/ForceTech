@@ -5,9 +5,9 @@
   <head>
     <title>$Title$</title>
     <script>
-      var errorLogin = '${errorlogin}';
+      var errorLogin = '${verif}';
     </script>
-    <script src="JS/index.js"></script>
+    <script src="JS/index.js"></script> //am declarat variabila errorLogin inainte de a deschide fisierul, deci va fi vizibila in fisierul index.js
   </head>
   <body>
     <%Date data=new Date();

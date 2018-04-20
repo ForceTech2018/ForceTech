@@ -5,7 +5,7 @@
   <head>
     <title>$Title$</title>
     <script>
-      var errorLogin = '${errorlogin}';
+      var errorLogin = '${verif}';
     </script>
     <script src="JS/index.js"></script>
   </head>

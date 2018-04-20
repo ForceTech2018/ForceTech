@@ -73,8 +73,5 @@
         <filter-name>profileFilter</filter-name>
         <url-pattern>/profile.jsp</url-pattern>
     </filter-mapping>
-    <filter-mapping>
-        <filter-name>profileFilter</filter-name>
-        <url-pattern>/securityprofile</url-pattern>
-    </filter-mapping>
+
 </web-app>

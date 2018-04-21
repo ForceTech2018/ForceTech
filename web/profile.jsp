@@ -37,16 +37,16 @@
     </div>
     <div id="container">
         <div id="security">
-            <h1 id="h1securitate">Securitate</h1>
+            <h1 id="h1securitate">Security</h1>
             <img id="avatarimg" alt="avatar" width="200px" height="220px" />
             <form action="/securityprofile" method="post" id="secform">
                 <label><p>AvatarURL (max 200):</p>
                     <input type="text" maxlength="200" name="avatar">
                 </label>
-                <label><p>Nume (max 20):</p>
+                <label><p>Fist Name (max 20):</p>
                     <input type="text" maxlength="20" name="firstname">
                 </label>
-                <label><p>Prenume (max 20):</p>
+                <label><p>Last Name (max 20):</p>
                     <input type="text" maxlength="20" name="lastname">
                 </label>
                 <label><p>Old Password (max 20):</p>
@@ -66,7 +66,7 @@
         </div>
         <div id="intermediar"></div>
         <div id="personal">
-            <h1 id="h1personal">Date personale</h1>
+            <h1 id="h1personal">Personal Data</h1>
             <form action="/personalprofile" method="post" id="persform">
                 <p id="textsexlabel">Sex:</p>
                 <label class="sexlabel">
@@ -75,17 +75,17 @@
                 <label class="sexlabel">
                     <p>F</p> <input type="radio" name="sex" value="feminin">
                 </label>
-                <label><p>Varsta (ex: 20):</p>
+                <label><p>Age (ex: 20):</p>
                     <input type="number" min="0" max="120" name="varsta">
                 </label>
-                <label><p>Inaltime (ex: 1.83):</p>
+                <label><p>Height (ex: 1.83):</p>
                     <input type="number" min="0" max="3" step="0.01" name="inaltime">
                 </label>
-                <label><p>Greutate (ex: 70.08):</p>
+                <label><p>Weight (ex: 70.08):</p>
                     <input type="number" min="0" max="500" step="0.01" name="greutate">
                 </label>
                 <label>
-                    <p>Nivel activitate actuala:</p>
+                    <p>Activity level:</p>
                     <select id="nivact" name="nivelact">
                         <option value="deloc">Deloc</option>
                         <option value="mediocru">Mediocru</option>

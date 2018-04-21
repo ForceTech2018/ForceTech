@@ -7,13 +7,13 @@ import java.sql.*;
  */
 public class DB_user {
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost/webapp?autoReconnect=true&useSSL=false";
-    //static final String DB_URL = "jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11227446?autoReconnect=true&useSSL=false";
+    //static final String DB_URL = "jdbc:mysql://localhost/webapp?autoReconnect=true&useSSL=false";
+    static final String DB_URL = "jdbc:mysql://sql11.freemysqlhosting.net:3306/sql11227446?autoReconnect=true&useSSL=false";
 
-    //static final String USER = "sql11227446";
-    //static final String PASS = "5VHgIpJuWT";
-    static final String USER = "admin";
-    static final String PASS = "experimental112";
+    static final String USER = "sql11227446";
+    static final String PASS = "5VHgIpJuWT";
+    //static final String USER = "admin";
+    //static final String PASS = "experimental112";
 
     public boolean isValidLogin(String name, String pass, String caut) throws ClassNotFoundException, SQLException {
         boolean isValid=false;

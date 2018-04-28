@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Pagina 1 de exercitii</title>
-    <link rel="stylesheet" href="/programe.css" type="text/css"/>
+    <link rel="stylesheet" href="/CSS/programe.css" type="text/css"/>
 
 </head>
 <body><ul class="menu">
@@ -23,6 +23,6 @@
     request.setAttribute("page","exercitii1");
     if(request.getAttribute("go")!="1") request.getRequestDispatcher("/interceptor").forward(request,response);
 %>
-<script src="/Design_programe.js"></script>
+<script src="/JS/Design_programe.js"></script>
 </body>
 </html>

@@ -9,15 +9,28 @@
 <html>
 <head>
     <title>Inregistrare</title>
+    <link rel="stylesheet" type="text/css" href="CSS/Register.css"/>
+    <meta charset="UTF-8">
+    <meta name="description" content="Prima pagina">
+    <meta name="keywords" content="forcetech, sport, register">
+    <meta name="author" content="ForceTech">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<form action="/inregistrare" method="post">
-    Name: <input type="text" name="name" minlength="5"/>
-    Pass: <input type="password" name="pass" minlength="2" />
-    Email: <input type="email" name="email" />
-    <input type="submit" value="Register"/>
-</form>
-
+    <img id="logo" src="IMG/logo.png" alt="logo">
+    <hr>
+    <div id="formular">
+         REGISTER
+        <form action="/inregistrare" method="post">
+            Name:  <input type="text" name="name" minlength="5"/>
+            <br>
+            Pass:  <input type="password" name="pass" minlength="2" />
+            <br>
+            Email:  <input type="email" name="email" />
+            <br>
+            <input type="submit" value="Register"/>
+        </form>
+    </div>
 <p>${errorregister}</p>
 </body>
 </html>

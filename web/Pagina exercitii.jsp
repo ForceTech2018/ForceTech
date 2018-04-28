@@ -30,6 +30,6 @@
         <img class="img1" src="IMG/absonfire.jpg" alt="Abs on fire!">
 
     </section>
-<script src="/Design_programe.js"></script>
+<script src="/JS/Design_programe.js"></script>
 </body>
 </html>

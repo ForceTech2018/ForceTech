@@ -11,9 +11,6 @@
     <title>Pagina 2 de exercitii</title>
 </head>
 <body>
-<%
-    request.setAttribute("page","exercitii1");
-    if(request.getAttribute("go")!="1") request.getRequestDispatcher("/interceptor").forward(request,response);
-%>
+
 </body>
 </html>

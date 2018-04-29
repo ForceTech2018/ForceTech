@@ -18,11 +18,7 @@
     <li><a href="#programs">Programs</a></li>
     <li><a href="#challenges">Challenges</a></li>
 </ul>
-<%
 
-    request.setAttribute("page","exercitii1");
-    if(request.getAttribute("go")!="1") request.getRequestDispatcher("/interceptor").forward(request,response);
-%>
 <script src="/JS/Design_programe.js"></script>
 </body>
 </html>

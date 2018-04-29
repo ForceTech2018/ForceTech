@@ -28,8 +28,8 @@ public class DB_user {
         System.out.println(conn);
         System.out.println("Creating statement...");
         stmt = conn.createStatement();
-        if(caut.compareTo("all")==0) sql="SELECT * FROM users where user_name = \""+name+ "\" AND user_password = \"" + pass + "\"";
-        else sql="SELECT * FROM users where user_name = \""+name+ "\"";
+        if(caut.compareTo("all")==0) sql="SELECT * FROM Users where user_name = \""+name+ "\" AND user_password = \"" + pass + "\"";
+        else sql="SELECT * FROM Users where user_name = \""+name+ "\"";
         System.out.println(sql);
 
         ResultSet rez = stmt.executeQuery(sql);
@@ -57,7 +57,7 @@ public class DB_user {
         stmt = conn.createStatement();
 
         //sql = "insert into Users (user_name,user_password) values (\"" +sUserName+ "\",\"" + sUserPassword + "\")";
-        sql = "insert into users (user_name,user_password,now_registered,avatar_url) values (\"" +user+ "\",\"" + pass + "\",1,\"IMG/noavatar.png\")";
+        sql = "insert into Users (user_name,user_password,now_registered,avatar_url) values (\"" +user+ "\",\"" + pass + "\",1,\"IMG/noavatar.png\")";
         System.out.println(sql);
         stmt.executeUpdate(sql);
         stmt.close();
@@ -78,7 +78,7 @@ public class DB_user {
         System.out.println("Creating statement...");
         stmt = conn.createStatement();
 
-        sql = "select "+value+" from users where user_name = \""+user+ "\" AND user_password = \"" + pass + "\"";
+        sql = "select "+value+" from Users where user_name = \""+user+ "\" AND user_password = \"" + pass + "\"";
         System.out.println(sql);
 
         ResultSet rez = stmt.executeQuery(sql);
@@ -103,7 +103,7 @@ public class DB_user {
         System.out.println("Creating statement...");
         stmt = conn.createStatement();
 
-        sql = "update users set "+value1+"=\""+value2+"\" where user_name = \""+user+"\" and user_password = \""+pass+"\"";
+        sql = "update Users set "+value1+"=\""+value2+"\" where user_name = \""+user+"\" and user_password = \""+pass+"\"";
         System.out.println(sql);
         stmt.executeUpdate(sql);
         stmt.close();

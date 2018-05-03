@@ -19,4 +19,8 @@ window.onload = function(){
         x[myIndex-1].style.display = "block";
         setTimeout(carousel, 2000);
     }
+
+
+
+
 }

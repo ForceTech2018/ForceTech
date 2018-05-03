@@ -3,17 +3,20 @@
     src: url("/FONTS/Capsule X Pro Medium UC.otf");
 }
 
-/*body{
+body{
     background-image: url("/IMG/wallpaper.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-}*/
+}
 
-p{
+.p1, p{
     font-family: ForceTechFont;
     color: black;
-    text-align: center;
 }
+p{
+    text-align:left;
+}
+
 button , #submit{
     font-family: ForceTechFont;
     background-color: black;
@@ -133,6 +136,4 @@ button:hover, #submit:hover{
         opacity:1;
     }
 }
-.mySlides{
-    display: none;
-}
+

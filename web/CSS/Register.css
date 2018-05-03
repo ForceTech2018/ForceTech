@@ -2,10 +2,12 @@
     font-family: ForceTechFont;
     src: url("/FONTS/Capsule X Pro Medium UC.otf");
 }
-body{
-    background: linear-gradient(45deg, black, #778899);
+/*body{
+    background-image: url("/IMG/slideshow2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 
-}
+}*/
 #logo{
     display:block;
     margin-left: auto;

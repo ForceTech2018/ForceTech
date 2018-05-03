@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Inregistrare</title>
+    <title>Sign in</title>
     <link rel="stylesheet" type="text/css" href="CSS/Register.css"/>
     <meta charset="UTF-8">
     <meta name="description" content="Prima pagina">
@@ -20,7 +20,7 @@
     <img id="logo" src="IMG/logo.png" alt="logo">
     <hr>
     <div id="formular">
-         REGISTER
+         SIGN UP
         <form action="/inregistrare" method="post">
             Name:  <input type="text" name="name" minlength="5"/>
             <br>

@@ -50,8 +50,8 @@ html{
 }
 
 @font-face {
-    font-family: 'headerfont';
-    src: url('../FONTS/Failed.ttf') format('truetype');
+    font-family: ForceTechFont1;
+    src: url("/FONTS/Capsule X Pro Medium UC.otf");
 }
 
 #container{
@@ -84,13 +84,13 @@ html{
     text-align: center;
     color: peru;
     text-decoration: underline;
-    font-family: "Century Gothic";
+    font-family: ForceTechFont1;
 }
 #h1personal{
     text-align: center;
     color: peru;
     text-decoration: underline;
-    font-family: "Century Gothic";
+    font-family: ForceTechFont1;
 }
 
 #intermediar{
@@ -194,7 +194,7 @@ label>p{
     height: 50px;
     text-align: center;
     color: peru;
-    font-family: "Century Gothic";
+    font-family: ForceTechFont1;
     font-weight: bold;
     font-size: 20px;
     border: 2px solid green;

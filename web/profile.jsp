@@ -40,10 +40,10 @@
             <h1 id="h1securitate">Security</h1>
             <img id="avatarimg" alt="avatar" width="200px" height="220px" />
             <form action="/securityprofile" method="post" id="secform">
-                <label><p>AvatarURL (max 200):</p>
+                <label><p>Avatar URL (max 200):</p>
                     <input type="text" maxlength="200" name="avatar">
                 </label>
-                <label><p>Fist Name (max 20):</p>
+                <label><p>First Name (max 20):</p>
                     <input type="text" maxlength="20" name="firstname">
                 </label>
                 <label><p>Last Name (max 20):</p>
@@ -55,7 +55,7 @@
                 <label><p>New Password (max 20):</p>
                     <input type="password" maxlength="20" name="newpassword">
                 </label>
-                <label><p>Repeat New Password</p>
+                <label><p>Retype New Password</p>
                     <input type="password" maxlength="20" name="rnewpassword">
                 </label>
                 <label><p>Email (max 50):</p>
@@ -87,28 +87,28 @@
                 <label>
                     <p>Activity level:</p>
                     <select id="nivact" name="nivelact">
-                        <option value="deloc">Deloc</option>
-                        <option value="mediocru">Mediocru</option>
+                        <option value="deloc">None</option>
+                        <option value="mediocru">Little</option>
                         <option value="normal" selected>Normal</option>
-                        <option value="sportiv">Sportiv</option>
+                        <option value="sportiv">Active</option>
                     </select>
                 </label>
                 <label class="tipactlabel">
-                    <p>Tip activitate preferat (alegere multipla):</p>
+                    <p>Favourite activity (you may choose more):</p>
                 </label>
                 <label class="tipactlabel">
-                    <p>Alergat</p> <input type="checkbox" name="tipact" value="alergat">
+                    <p>Running</p> <input type="checkbox" name="tipact" value="alergat">
                 </label>
                 <label class="tipactlabel">
-                    <p>Static (ex: fintess)</p> <input type="checkbox" name="tipact" value="static">
+                    <p>Indoor, static (ex: fitness)</p> <input type="checkbox" name="tipact" value="static">
                 </label>
                 <label class="tipactlabel">
                     <p>Workout</p> <input type="checkbox" name="tipact" value="workout">
                 </label>
                 <label class="tipactlabel">
-                    <p>Diferite sporturi</p> <input type="checkbox" name="tipact" value="sports">
+                    <p>Outdoors</p> <input type="checkbox" name="tipact" value="sports">
                 </label>
-                    <textarea rows="5" cols="60" name="feedback">Asteptari: </textarea>
+                    <textarea rows="5" cols="60" name="feedback">Expectations: </textarea>
                 <input type="submit" value="Salveaza" id="perssubmit"/>
             </form>
         </div>

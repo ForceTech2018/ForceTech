@@ -1,4 +1,4 @@
-package com.servlets;
+package com.filters;
 
 import com.users.CheckCookies;
 import com.users.CookiesClass;
@@ -13,13 +13,13 @@ import java.io.IOException;
 /**
  * Created by CristyBv on 26-Mar-18.
  */
-@WebFilter(filterName = "Filter")
-public class Filter implements javax.servlet.Filter {
+@WebFilter(filterName = "logFilter")
+public class logFilter implements javax.servlet.Filter {
     public void destroy() {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        System.out.println("Filter");
+        System.out.println("logFilter");
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
@@ -45,23 +45,13 @@ public class Filter implements javax.servlet.Filter {
             }
         } else if (cook.getUser() == null || cook.getPass() == null) {  //daca nu sunt logat, sa ma redirec. pe index automat
             response.sendRedirect("/index.jsp");
-//<<<<<<< HEAD
+
         } else if (cook.getNowReg().compareTo("1") == 0) {
             response.sendRedirect("/profile.jsp");
         }  //este proaspat inregistrat, deci trebuie completat profilul mai intai
-//=======
-
-        else if (cook.getNowReg().compareTo("1") == 0) {
-            response.sendRedirect("/profile.jsp");
-        }
-//>>>>>>> c6de897c4fd019f476e016ff204866c24aae092c
 
         chain.doFilter(request, response);
 
-        /*if(name==null || pass==null)
-            if(pathgo.compareTo("/logare")!=0 && pathgo.compareTo("/register.jsp")!=0 && pathgo.compareTo("/inregistrare")!=0) {
-                System.out.println("daaaaa");
-            request.getRequestDispatcher("/login.jsp").forward(req,resp);}*/
     }
 
 

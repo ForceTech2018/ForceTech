@@ -1,4 +1,4 @@
-package com.servlets;
+package com.filters;
 
 import com.users.CheckCookies;
 import com.users.CookiesClass;

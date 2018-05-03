@@ -49,25 +49,25 @@
     </servlet-mapping>
 
     <filter>
-        <filter-name>Filter</filter-name>
-        <filter-class>com.servlets.Filter</filter-class>
+        <filter-name>logFilter</filter-name>
+        <filter-class>com.filters.logFilter</filter-class>
     </filter>
     <filter-mapping>
-        <filter-name>Filter</filter-name>
+        <filter-name>logFilter</filter-name>
         <url-pattern>/welcome.jsp</url-pattern>
     </filter-mapping>
     <filter-mapping>
-        <filter-name>Filter</filter-name>
+        <filter-name>logFilter</filter-name>
         <url-pattern>/welcome2.jsp</url-pattern>
     </filter-mapping>
     <filter-mapping>
-        <filter-name>Filter</filter-name>
+        <filter-name>logFilter</filter-name>
         <url-pattern>/index.jsp</url-pattern>
     </filter-mapping>
 
     <filter>
         <filter-name>profileFilter</filter-name>
-        <filter-class>com.servlets.profileFilter</filter-class>
+        <filter-class>com.filters.profileFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>profileFilter</filter-name>

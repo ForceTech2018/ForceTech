@@ -1,8 +1,5 @@
 package com.users;
 
-/**
- * Created by CristyBv on 04-Apr-18.
- */
 public class CookiesClass {
     String user;
     String pass;

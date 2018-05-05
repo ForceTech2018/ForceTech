@@ -4,9 +4,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * Created by CristyBv on 04-Apr-18.
- */
+
 public class CheckCookies {
     public CookiesClass isLogged(HttpServletRequest request, HttpServletResponse response){
         CookiesClass cook = new CookiesClass();

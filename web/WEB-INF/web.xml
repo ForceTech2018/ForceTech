@@ -74,4 +74,34 @@
         <url-pattern>/profile.jsp</url-pattern>
     </filter-mapping>
 
+    <filter>
+        <filter-name>userDataFilter</filter-name>
+        <filter-class>com.filters.logFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>userDataFilter</filter-name>
+        <url-pattern>/welcome.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>userDataFilter</filter-name>
+        <url-pattern>/welcome2.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>userDataFilter</filter-name>
+        <url-pattern>/index.jsp</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>userDataFilter</filter-name>
+        <url-pattern>/exercitii1.jsp"</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>userDataFilter</filter-name>
+        <url-pattern>/exercitii2.jsp"</url-pattern>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>userDataFilter</filter-name>
+        <url-pattern>/exercitii3.jsp"</url-pattern>
+    </filter-mapping>
+
+
 </web-app>

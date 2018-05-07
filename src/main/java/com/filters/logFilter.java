@@ -41,8 +41,12 @@ public class logFilter implements javax.servlet.Filter {
                 request.setAttribute("verif", "0");
             } else {
                 request.setAttribute("verif", "1");
+                request.setAttribute("numeuser", cook.getUser());
             }
+
+
         } else if (cook.getUser() == null || cook.getPass() == null) {  //daca nu sunt logat, sa ma redirec. pe index automat
+
             response.sendRedirect("/index.jsp");
 
         } else if (cook.getNowReg().compareTo("1") == 0) {

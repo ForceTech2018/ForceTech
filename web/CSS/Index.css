@@ -4,25 +4,25 @@
 }
 
 body{
-    background-image: url("/IMG/wallpaper.jpg");
+    background-image: url("/IMG/bestbackground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.p1, p{
+.p1, p, h1, #text{
     font-family: ForceTechFont;
     color: black;
 }
 p{
-    text-align:left;
+    text-align:center;
 }
-
 button , #submit{
     font-family: ForceTechFont;
-    background-color: black;
+    background-color: #4169E1;
     color: white;
     border: 2px solid white;
-    padding: 15px 32px;
+    border-radius: 10px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -32,21 +32,39 @@ button , #submit{
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
 }
-
+#introducere{
+    top:15%;
+    text-align: center;
+    background-color:#FAFAD2;
+    width:40%;
+    position:relative;
+    left:30%;
+    right:30%;
+    opacity:0.9;
+    border-radius:10px;
+}
 button:hover, #submit:hover{
     background-color: white;
-    color:black;
+    color:#4169E1;
+    border: 2px solid #4169E1;
+}
+hr{
+    color: #4169E1;
+
 }
 #logo{
     display:block;
     margin-left: auto;
     margin-right: auto;
+    height:25%;
+    width:13%;
     -webkit-animation: fadein 10s;
     -moz-animation: fadein 10s;
     -ms-animation: fadein 10s;
     -o-animation: fadein 10s;
     animation: fadein 10s;
 }
+
 @keyframes fadein {
     0%{
         opacity: 0;

@@ -41,5 +41,12 @@ window.onload = function(){
 
    }
 
+}
 
+function loginclick(){
+
+    var form = document.getElementById("loginform");
+    var stil = window.getComputedStyle(form);
+    if(stil.display === "none") form.style.display="block";
+    else form.style.display="none";
 }

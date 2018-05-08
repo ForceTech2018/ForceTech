@@ -4,24 +4,10 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <!-- START LOGGIN SERVLET -->
     <servlet>
         <servlet-name>logare</servlet-name>
         <servlet-class>com.servlets.logare</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>inregistrare</servlet-name>
-        <servlet-class>com.servlets.inregistrare</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>logout</servlet-name>
-        <servlet-class>com.servlets.logout</servlet-class>
-    </servlet>
-
-    <servlet>
-        <servlet-name>profile</servlet-name>
-        <servlet-class>com.servlets.profile</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -29,15 +15,33 @@
         <url-pattern>/logare</url-pattern>
     </servlet-mapping>
 
+    <!-- START REGISTER SERVLET -->
+    <servlet>
+        <servlet-name>inregistrare</servlet-name>
+        <servlet-class>com.servlets.inregistrare</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>inregistrare</servlet-name>
         <url-pattern>/inregistrare</url-pattern>
     </servlet-mapping>
 
+    <!-- START LOGOUT SERVLET -->
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>com.servlets.logout</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>logout</servlet-name>
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
+
+    <!-- START PROFILE SERVLET -->
+    <servlet>
+        <servlet-name>profile</servlet-name>
+        <servlet-class>com.servlets.profile</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>profile</servlet-name>
@@ -48,23 +52,23 @@
         <url-pattern>/personalprofile</url-pattern>
     </servlet-mapping>
 
+    <!-- START LOG FILTER -->
     <filter>
         <filter-name>logFilter</filter-name>
         <filter-class>com.filters.logFilter</filter-class>
     </filter>
-    <filter-mapping>
-        <filter-name>logFilter</filter-name>
-        <url-pattern>/welcome.jsp</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>logFilter</filter-name>
-        <url-pattern>/welcome2.jsp</url-pattern>
-    </filter-mapping>
+
     <filter-mapping>
         <filter-name>logFilter</filter-name>
         <url-pattern>/index.jsp</url-pattern>
     </filter-mapping>
 
+    <filter-mapping>
+        <filter-name>logFilter</filter-name>
+        <url-pattern>/home.jsp</url-pattern>
+    </filter-mapping>
+
+    <!-- START PROFILE FILTER -->
     <filter>
         <filter-name>profileFilter</filter-name>
         <filter-class>com.filters.profileFilter</filter-class>
@@ -73,35 +77,4 @@
         <filter-name>profileFilter</filter-name>
         <url-pattern>/profile.jsp</url-pattern>
     </filter-mapping>
-
-    <filter>
-        <filter-name>userDataFilter</filter-name>
-        <filter-class>com.filters.logFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>userDataFilter</filter-name>
-        <url-pattern>/welcome.jsp</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>userDataFilter</filter-name>
-        <url-pattern>/welcome2.jsp</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>userDataFilter</filter-name>
-        <url-pattern>/index.jsp</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>userDataFilter</filter-name>
-        <url-pattern>/exercitii1.jsp"</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>userDataFilter</filter-name>
-        <url-pattern>/exercitii2.jsp"</url-pattern>
-    </filter-mapping>
-    <filter-mapping>
-        <filter-name>userDataFilter</filter-name>
-        <url-pattern>/exercitii3.jsp"</url-pattern>
-    </filter-mapping>
-
-
 </web-app>

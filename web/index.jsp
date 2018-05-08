@@ -20,20 +20,20 @@
     <!--//am declarat variabila errorLogin inainte de a deschide fisierul, deci va fi vizibila in fisierul index.js-->
   </head>
   <body>
-
-    <button id="login" onclick="location.href = 'login.jsp';">Login</button>
-    <button id="signin" onclick="location.href = 'register.jsp';">Sign In</button>
-    <form action="/logout" method="post">
-      <input id="submit" type="submit" value="Logout"/>
-    </form>
-    <button id="profile" onclick="location.href = 'profile.jsp';">Profil</button>
-    <img id="logo" src="IMG/favicon2.png" alt="logo">
-    <hr>
+    <div id="header">
+        <button id="login" onclick="loginclick();">Login</button>
+        <button id="signin" onclick="location.href = 'register.jsp';">Sign In</button>
+        <form action="/logout" method="post">
+          <input id="submit" type="submit" value="Logout"/>
+        </form>
+        <button id="profile" onclick="location.href = 'profile.jsp';">Profil</button>
+        <img id="logo" src="IMG/favicon2.png" alt="logo">
+    </div>
     <p class="p1">
       Join us in a 360 degrees transformation!
     </p>
     <br>
-    <button id="start"> Start</button>
+    <button id="start" onclick="location.href = 'home.jsp';">Start</button>
     <section id="introducere">
       <h1>Cine este ForceTech?</h1>
       <div id="text">
@@ -45,6 +45,16 @@
         Inscrie-te acum si alatura-te comunitatii ForceTech!
       </div>
     </section>
+
+    <div id="loginform">
+        <form action="/logare" method="post">
+            <label id="namelabel">Name: <input type="text" name="name" width="30"/></label>
+            <br>
+            <label id="passlabel">Pass: <input type="password" name="pass" width="10"/></label>
+            <br>
+            <input type="submit" value="Login" id="submitlogin"/>
+        </form>
+    </div>
 
   </body>
 </html>

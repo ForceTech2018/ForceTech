@@ -1,0 +1,218 @@
+body{
+    margin: 0;
+}
+
+#blur{
+    position: absolute;
+    left:0;
+    top:20px;
+    width: 100%;
+    height: 200px;
+    filter: blur(10px);
+    background: url(../IMG/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header{
+    position: absolute;
+    width: 100%;
+    height: 225px;
+    margin: auto;
+    background: url(../IMG/banner_bg.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 5%;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+#logo{
+    display:block;
+    float:left;
+    height:125px;
+    width:60%;
+    padding-left: 12%;
+    padding-top: 40px;
+    -webkit-animation: fadein 5s;
+    -moz-animation: fadein 5s;
+    -ms-animation: fadein 5s;
+    -o-animation: fadein 5s;
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@-ms-keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity:0.25;
+    }
+    50%{
+        opacity:0.5;
+    }
+    75%{
+        opacity:0.75;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+#userdata{
+    float:right;
+    width: 25%;
+    height: 70%;
+    position: relative;
+    top:15%;
+}
+
+#bara{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 20px;
+    height: 125px;
+    float:left;
+    width: 2px;
+    border: 2px solid darkblue;
+    background: yellow;
+}
+
+body{
+    background: url(../IMG/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    top: 275px;
+    left: 10%;
+    width: 80%;
+    height: 1000px;
+    background-image: url("../IMG/container.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+}
+
+#submit , #profile{
+
+    background-color: #4169E1;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#submit:hover , #profile:hover {
+    background-color: white;
+    color:#4169E1;
+    border: 2px solid #4169E1;
+}
+
+#formsubmit{
+    position: absolute;
+    left:130px;
+    top:10px;
+}
+
+#profile{
+    position: absolute;
+    bottom: 10px;
+    padding: 5px 25px 5px 25px;
+    font-size: 15px;
+}
+
+#miniavatar{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top:5px;
+}
+
+

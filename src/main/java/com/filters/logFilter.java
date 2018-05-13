@@ -53,6 +53,9 @@ public class logFilter implements javax.servlet.Filter {
             response.sendRedirect("/profile.jsp");
         }  //este proaspat inregistrat, deci trebuie completat profilul mai intai
 
+        request.setAttribute("avatar", cook.getAvatar_url());
+
+
         chain.doFilter(request, response);
 
     }

@@ -7,7 +7,7 @@ body{
     left:0;
     top:20px;
     width: 100%;
-    height: 200px;
+    height: 285px;
     filter: blur(10px);
     background: url(../IMG/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -162,9 +162,10 @@ body{
 .container {
     position: absolute;
     top: 275px;
-    left: 10%;
-    width: 80%;
-    height: 1000px;
+    left: 12%;
+    width: 75%;
+    height: auto;
+    padding-bottom: 10%;
     background-image: url("../IMG/container.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -216,3 +217,110 @@ body{
 }
 
 
+/*Footer*/
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    text-align: center;
+    background: cornflowerblue;
+}
+
+/*Footer*/
+
+/*Meniu*/
+
+#meniu{
+    position: absolute;
+    top:225px;
+    height: 50px;
+    width: 100%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    z-index: 2;
+}
+
+nav{
+    height: 100%;
+    width: 70%;
+    margin: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+li a, li div {
+    display: block;
+    text-align: center;
+    background-color: #4169E1;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 7px 12px;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+li a:hover, li div:hover{
+    background-color: white;
+    color:#4169E1;
+    border: 2px solid #4169E1;
+}
+
+li{
+    display: block;
+    float:left;
+    width: 25%;
+    height: 100%;
+}
+
+#lisubmenu div{
+    margin-bottom: 0;
+}
+
+#submenu li{
+    float:none;
+    width: 100%;
+    height: auto;
+
+}
+
+#submenu li a{
+    font-size: 17px;
+    display: none;
+    margin: 0;
+}
+
+#lisubmenu>div:hover+#submenu li a{
+    display: block;
+}
+
+#submenu:hover li a{
+    display: block;
+}
+
+.current{
+    background-color: white;
+    color:#4169E1;
+    border: 2px solid #4169E1;
+}
+
+.current:hover{
+    background-color: #4169E1;
+    color: white;
+    border: 2px solid white;
+}
+
+/*Meniu*/

@@ -1,17 +1,17 @@
 <%--
   Created by IntelliJ IDEA.
   User: CristyBv
-  Date: 08-May-18
-  Time: 12:35
+  Date: 14-May-18
+  Time: 18:50
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Home - ForceTech</title>
+    <title>Contact - ForceTech</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
-    <link rel="stylesheet" type="text/css" href="CSS/home.css"/>
-    <link rel="shortcut icon" type="image/png" href="IMG/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="CSS/contact.css"/>
+    <link rel="shortcut icon" type="image/png" href="/IMG/favicon.png"/>
     <meta charset="UTF-8">
     <meta name="description" content="Pagina de home">
     <meta name="keywords" content="forcetech, sport, welcome, home">
@@ -20,7 +20,7 @@
     <script>
         var avatar = '${avatar}';
     </script>
-    <script src="JS/home.js"></script>
+    <script src="JS/contact.js"></script>
 </head>
 <body>
 <div id="blur"></div>
@@ -39,7 +39,7 @@
     <nav>
         <ul>
             <li id="first">
-                <a href="home.jsp" class="current">Home</a>
+                <a href="home.jsp">Home</a>
             </li>
             <li>
                 <a href="chat.jsp">Chat</a>
@@ -59,13 +59,13 @@
                 </ul>
             </li>
             <li>
-                <a href="contact.jsp">Contact</a>
+                <a href="contact.jsp" class="current">Contact</a>
             </li>
         </ul>
     </nav>
 </div>
 <div class="container">
+
 </div>
-<footer>Echipa ForceTech ® All rights reserved!</footer>
 </body>
 </html>

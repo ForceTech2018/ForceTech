@@ -1,7 +1,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="CSS/profil.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/profile.css"/>
+    <link rel="shortcut icon" type="image/png" href="IMG/favicon.png"/>
     <title>ForceTech - Profile</title>
     <meta charset="UTF-8">
     <meta name="description" content="Pagina de profil">
@@ -32,13 +34,51 @@
     <script src="JS/profile.js"></script>
 </head>
 <body>
-    <div id="title">
-        <img id="logo" src="IMG/banner_ft1.jpg" alt="logo"/>
+<div id="blur"></div>
+<div id="header">
+    <img id="logo" src="IMG/banner.png" alt="logo">
+    <div id="bara"></div>
+    <div id="userdata">
+        <form action="/logout" method="post" id="formsubmit">
+            <input class = "userdata" id="submit" type="submit" value="Logout"/>
+        </form>
+        <img id="miniavatar"/>
+        <button class="userdata" id="profile" onclick="location.href = 'profile.jsp';">Profil</button>
     </div>
-    <div id="container">
+</div>
+<div id="meniu">
+    <nav>
+        <ul>
+            <li id="first">
+                <a href="home.jsp">Home</a>
+            </li>
+            <li>
+                <a href="chat.jsp">Chat</a>
+            </li>
+            <li id="lisubmenu">
+                <div>Exercitii</div>
+                <ul id="submenu">
+                    <li>
+                        <a href="exercitii1.jsp">Exercitii1</a>
+                    </li>
+                    <li>
+                        <a href="exercitii2.jsp">Exercitii2</a>
+                    </li>
+                    <li>
+                        <a href="exercitii3.jsp">Exercitii3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="contact.jsp">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</div>
+    <div class="container">
         <div id="security">
             <h1 id="h1securitate">Security</h1>
-            <img id="avatarimg" alt="avatar" width="200px" height="220px" />
+            <img id="avatarimg" alt="avatar" width="180px" height="200px" />
             <form action="/securityprofile" method="post" id="secform">
                 <label><p>Avatar URL (max 200):</p>
                     <input type="text" maxlength="200" name="avatar">
@@ -93,9 +133,8 @@
                         <option value="sportiv">Active</option>
                     </select>
                 </label>
-                <label class="tipactlabel">
-                    <p>Favourite activity (you may choose more):</p>
-                </label>
+
+                    <p id="tipact">Favourite activity (you may choose more):</p>
                 <label class="tipactlabel">
                     <p>Running</p> <input type="checkbox" name="tipact" value="alergat">
                 </label>
@@ -108,10 +147,11 @@
                 <label class="tipactlabel">
                     <p>Outdoors</p> <input type="checkbox" name="tipact" value="sports">
                 </label>
-                    <textarea rows="5" cols="60" name="feedback">Expectations: </textarea>
+                    <textarea rows="5" cols="40" name="feedback">Expectations: </textarea>
                 <input type="submit" value="Salveaza" id="perssubmit"/>
             </form>
         </div>
     </div>
+<footer>Echipa ForceTech ® All rights reserved!</footer>
 </body>
 </html>

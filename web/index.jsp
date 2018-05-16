@@ -44,7 +44,8 @@
         <section id="introducere">
           <h1>Cine este ForceTech?</h1>
           <div id="text">
-            ForceTech suntem noi. Cei pe care ne bucura miscarea. Ne bucura si rezultatele ei, nu te vom minti...
+              <p> ForceTech suntem noi.</p>
+              Cei pe care ne bucura miscarea. Ne bucura si rezultatele ei, nu te vom minti...
             Ne bucura sa facem miscare impreuna. Informaticienii Forcetech au implementat aceasta aplicatie in 2018,
             in sprijinul tuturor celor care au nevoie de o sugestie, de o motivatie si, mai ales, de un prieten, pentru a
             indeplini cele 30 de minute de sport zilnic.

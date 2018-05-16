@@ -1,0 +1,39 @@
+.togetfit{
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    left: 12%;
+    width: 75%;
+    height:100%;
+    position:relative;
+}
+.container>p{
+    color: white;
+    width: 75%;
+    left: 12%;
+    position:relative;
+}
+.exercitiu{
+    width:30%;
+}
+.togetfit1{
+    width:100%;
+    position:relative;
+    float:left;
+}
+.descriere1{
+    position:relative;
+    float:right;
+    background-color: #fff1c8;
+    width: 65%;
+    padding: 2%;
+}
+.descriere1:hover{
+    transform: scale(1.2);
+    border-radius: 12px;
+    border: 3px solid white;
+}
+
+.check{
+    background-color: #4169E1;
+}
+

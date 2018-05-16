@@ -73,6 +73,11 @@
         <url-pattern>/contact.jsp</url-pattern>
     </filter-mapping>
 
+    <filter-mapping>
+        <filter-name>logFilter</filter-name>
+        <url-pattern>/exercitii1.jsp</url-pattern>
+    </filter-mapping>
+
     <!-- START PROFILE FILTER -->
     <filter>
         <filter-name>profileFilter</filter-name>

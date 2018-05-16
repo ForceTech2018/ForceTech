@@ -1,0 +1,134 @@
+@font-face {
+    font-family: ForceTechFont;
+    src: url("/FONTS/Capsule X Pro Medium UC.otf");
+}
+
+p, h1{
+    text-align:center;
+    color:#4169E1;
+}
+.text{
+    text-color: #4169E1;
+}
+#submit , #profile, #miniavatar {
+    display: none;
+}
+
+#login, #start{
+    width: 150px;
+    height: 75px;
+    background-color: #4169E1;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: none;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#login:hover , #start:hover{
+    background-color: white;
+    color:#4169E1;
+    border: 2px solid #4169E1;
+}
+
+#login{
+    position: absolute;
+    top:20px;
+    left:20px;
+}
+
+#start{
+    margin: auto;
+}
+
+#introducere{
+    color: #4169E1;
+    /*text-align: center;*/
+    width:40%;
+    position:relative;
+    margin: auto;
+    border-radius:10px;
+    font-size: 200%;
+    font-family: ForceTechFont;
+}
+
+hr{
+    color: #4169E1;
+}
+
+#motto{
+    font-size: 30px;
+    color:#4169E1;
+}
+
+.container {
+    top:225px;
+}
+
+/*login form*/
+
+#loginform{
+    position: fixed;
+    width:50%;
+    height: 50%;
+    left:25%;
+    top:20%;
+    background: #4169E1;
+    opacity: 0.8;
+    border: 3px solid white;
+    border-radius: 20%;
+    display: none;
+    z-index: 1;
+}
+
+label{
+    display: block;
+    font-size: 25px;
+    color:white;
+    position: absolute;
+}
+
+#namelabel{
+    left:30%;
+    top:30%;
+}
+#passlabel{
+    left:30%;
+    top:45%;
+}
+
+input{
+    margin-bottom: 10px;
+    border: 2px solid #4169E1;
+    margin-left:20px;
+}
+
+#submitlogin{
+    float:none;
+    position: absolute;
+    left:30%;
+    width: 150px;
+    background-color: #4169E1;
+    border-radius: 10%;
+    border: 2px solid white;
+    position: absolute;
+    left:40%;
+    top:60%;
+}
+
+#submitlogin:hover{
+    background-color: white;
+    color:#4169E1;
+    border: 2px solid #4169E1;
+}
+
+/*loginform*/
+

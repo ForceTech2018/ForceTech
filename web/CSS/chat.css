@@ -1,0 +1,112 @@
+#fereastra{
+    display: block;
+    width: 80%;
+    height: 100vh;
+    margin: 50px auto auto;
+    background: url(../IMG/backgroundChat.png) no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+
+#messagesChat{
+    display: block;
+    width: 50%;
+    height: 50%;
+    background: none;
+    float:left;
+    border: 1px solid black;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    position: absolute;
+    resize: none;
+    top:25%;
+    left:8%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#usersChat{
+    display: block;
+    width: 25%;
+    height: 50%;
+    background: none;
+    border: 1px dashed black;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    position: absolute;
+    right:10%;
+    top:25%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#messagesWrite{
+    display: block;
+    background: none;
+    float: left;
+    width: 50%;
+    height: 75px;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none;
+    border: 1px solid black;
+}
+
+#send{
+    display: block;
+    float:left;
+    width: 25%;
+    height: 75px;
+    margin-left:7%;
+    background: none;
+}
+
+#inputs{
+    position: absolute;
+    top:80%;
+    width: 100%;
+    left:8%;
+}
+
+#p1,#p2{
+    position: absolute;
+    background-color: darkcyan;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 7px 12px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    margin: 4px 2px;
+    font-weight: bold;
+}
+
+#p1{
+    top:10%;
+    left:17%;
+
+}
+
+#p2{
+    top:10%;
+    left:70%;
+}
+
+.mesaje{
+    padding-left: 10px;
+}
+
+.mesajeUsers{
+    padding-left: 10px;
+}

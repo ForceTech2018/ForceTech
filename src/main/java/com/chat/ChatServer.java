@@ -10,10 +10,10 @@ import java.util.*;
 
 @ServerEndpoint("/chatserver")
 public class ChatServer {
-    static Set<Session> chatUsers = Collections.synchronizedSet(new HashSet<Session>());
+    private static Set<Session> chatUsers = Collections.synchronizedSet(new HashSet<Session>());
 
     @OnOpen
-    public void handleOpen(Session userSession){
+    public void handleOpen(Session userSession) throws IOException {
         chatUsers.add(userSession);
     }
 
@@ -22,18 +22,53 @@ public class ChatServer {
         String username = (String) userSession.getUserProperties().get("username");
         if(username == null){
             userSession.getUserProperties().put("username",message);
-            userSession.getBasicRemote().sendText("You are now connected as "+message);
+            int ok=2;
+            for (Session session : chatUsers) {
+                if(session.getUserProperties().get("username").equals(message)) ok--;
+            }
+            if(ok == 1){
+                userSession.getBasicRemote().sendText("You are now connected as "+message);
+
+                Iterator<Session> iterator = chatUsers.iterator();
+                StringBuilder str = new StringBuilder();
+                while(iterator.hasNext()){
+                    Session session = iterator.next();
+                    str.append(session.getUserProperties().get("username")).append(",");
+                }
+                iterator = chatUsers.iterator();
+                while(iterator.hasNext()){
+                    Session session = iterator.next();
+                    session.getBasicRemote().sendText(str.toString());
+                }
+            }
+
+            else{
+                userSession.getBasicRemote().sendText("invalid");
+                chatUsers.remove(userSession);
+            }
+
         }
         else{
-            Iterator<Session> iterator = chatUsers.iterator();
-            while(iterator.hasNext()){
-                iterator.next().getBasicRemote().sendText(username + " : " + message);
+            for (Session chatUser : chatUsers) {
+                chatUser.getBasicRemote().sendText(username + " : " + message);
             }
         }
     }
 
     @OnClose
-    public void handleClose(Session userSession){
+    public void handleClose(Session userSession) throws IOException {
         chatUsers.remove(userSession);
+
+        Iterator<Session> iterator = chatUsers.iterator();
+        StringBuilder str = new StringBuilder();
+        while(iterator.hasNext()){
+            Session session = iterator.next();
+            str.append(session.getUserProperties().get("username")).append(",");
+        }
+        iterator = chatUsers.iterator();
+        while(iterator.hasNext()){
+            Session session = iterator.next();
+            session.getBasicRemote().sendText(str.toString());
+        }
     }
 }

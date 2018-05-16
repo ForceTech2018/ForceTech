@@ -72,35 +72,61 @@
         <h2>Why practicing Yoga?</h2>
             Practicing Yoga will help you:
 
-           <ul id="listBenefits">
-               <li>improve and maintain the health of muscles and organs</li>
-               <li>keep your mind healthy</li>
-               <li>get a better night’s sleep</li>
-               <li>improve performance and prevent injuries in sports</li>
-               <li>speed recovery from training</li>
-               <li>prevent conditions such as diabetes, heart disease and auto-immune disorders</li>
-               <li>slow down the negative effects of an office job</li>
-               <li>increase your sense of happiness and well being</li>
-           </ul>
+               <p class="listamica">improve and maintain the health of muscles and organs</p>
+               <p class="listamica">keep your mind healthy</p>
+               <p class="listamica">get a better night’s sleep</p>
+               <p class="listamica">improve performance and prevent injuries in sports</p>
+               <p class="listamica">speed recovery from training</p>
+               <p class="listamica">prevent conditions such as diabetes, heart disease and auto-immune disorders</p>
+               <p class="listamica">slow down the negative effects of an office job</p>
+               <p class="listamica">increase your sense of happiness and well being</p>
+
     </div>
 
     <div id="f2" class="divs">
         <h2>Start your Yoga journey!</h2>
-            Yoga is not a good cardio workout, so it is generally not an effective way to lose weight. However,
-            it is a whole body workout that can make you work very hard, sweat and, in some cases, exhaust yourself. Its strength is in toning
-            the body through challenging physical exercise and improving overall health through increased flexibility, body awareness and relaxation.
-
-        The gesture Namaste represents the belief that there is a Divine spark within each of us that is located in the heart chakra.
-        The gesture is an acknowledgment of the soul in one by the soul in another.
-            Accessories or even a yoga mat are by no means a prerequisite to practise...Just be creative!
-
+        <p>Yoga is not a good cardio workout, so it is generally not an effective way to lose weight. However,
+        it is a whole body workout that can make you work very hard, sweat and, in some cases, exhaust yourself. Its strength is in toning
+        the body through challenging physical exercise and improving overall health through increased flexibility, body awareness and relaxation.
+        </p>
+       <p> The gesture Namaste represents the belief that there is a Divine spark within each of us that is located in the heart chakra.
+           The gesture is an acknowledgment of the soul in one by the soul in another.</p>
+        <p>
         Yoga may help reverse heart disease. Well, when combined with aerobic exercise and a low-fat plant-based diet. The author of one study said, “Adherence to the yoga and meditation program was as strongly correlated with the changes in the amount of blockage [in the arteries] as was the adherence to diet.”
         Yoga may help to control inflammation throughout the body as well.
         Yoga has long been used for relieving stress and improving mood. Plus, since some people overeat due to stress, conquering stress
         with yoga might indirectly improve nutrition.
+        </p>
+        <p>
         If you pick an online class, don’t get stuck in reading too many class descriptions. The nature of the mind is to look for the perfect class
-            to solve everything. That class doesn’t exist; you have to make it yourself.
+        to solve everything. That class doesn’t exist; you have to make it yourself.</p>
     </div>
+    <div id="f3" class="divs">
+        <label class="check"><input type="checkbox"></label>
+       <h2>Yoga for Chronic Stress, Anxiety and Depression</h2>
+        This beginner yoga program works with a variety of yoga techniques to help you feel, understand and let go of your chronic stress,
+        anxiety and/or depression. It works with pranayama to wake you up, relaxation and meditation to shift your mental energy and a series of
+        carefully-chosen yoga classes that help you learn to stretch and release the deeply-held tension in your body. David, our founder, will also
+        be there with short, weekly videos to help you understand how to let go of stress,
+        anxiety and depression. Please note that it would be best to do this program with the guidance of a health professional.
+    </div>
+    <div id="f4" class="divs">
+        <label class="check"><input type="checkbox"></label>
+        <h2>Establish Your Core Stability and Strength</h2>
+        Learning how to engage and strengthen your core helps you in all aspects of life, not only yoga. If you dedicate time to this,
+        it will help you find an inner power that will support you in all things that you do in life.
+        It will also help you feel a lightness in your body and a healthy length in your spine.
+    </div>
+
+    <div id="quote">
+        Yoga is not about touching your toes, it is what you learn on the way down. -JIGAR GOR
+    </div>
+    
+
+    <img class="images" id="im1" src="IMG/Exercises - pictures/Yoga/yoga1.jpg" alt="Yoga exercise"/>
+    <img class="images" id="im2" src="IMG/Exercises - pictures/Yoga/yoga2.jpg" alt="Yoga exercise"/>
+
 </div>
+<footer>Echipa ForceTech ® All rights reserved!</footer>
 </body>
 </html>

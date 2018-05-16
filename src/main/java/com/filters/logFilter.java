@@ -53,6 +53,11 @@ public class logFilter implements javax.servlet.Filter {
             response.sendRedirect("/profile.jsp");
         }  //este proaspat inregistrat, deci trebuie completat profilul mai intai
 
+        if(pathgo.compareTo("/chat.jsp") == 0) {
+            request.setAttribute("nume",cook.getNume());
+            request.setAttribute("prenume",cook.getPrenume());
+        }
+
         request.setAttribute("avatar", cook.getAvatar_url());
 
 

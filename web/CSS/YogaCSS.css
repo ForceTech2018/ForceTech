@@ -1,5 +1,5 @@
 body{
-    background: url(../IMG/yoga.jpg) no-repeat center center fixed;
+    background: url("../IMG/Exercises - pictures/Yoga/yoga.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -15,6 +15,7 @@ body{
     padding:10px;
     width: 45%;
     height: auto;
+    left: 50%;
     background-color: rgba(255,255,0, 0.5);
     box-sizing: border-box;
     font-family:"American Typewriter";
@@ -22,11 +23,18 @@ body{
 }
 #f1{
     top: 400px;
-    left: 50%;
+    text-align: center;
+    font-weight: bold;
 }
 #f2{
-    top:700px;
-    left:50%;
+    text-indent: 50px;
+    top:1000px;
+}
+#f3{
+    top:1600px;
+}
+#f4{
+    top:1900px;
 }
 h2{
     color: maroon;
@@ -36,6 +44,51 @@ h2{
     text-align: center;
 
 }
-#listBenefits{
+.listamica{
+    background-color: midnightblue;
+    border: 2px solid black;
+    border-radius: 25px ;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    color:white;
+}
+.listamica:hover{
+    background-color: antiquewhite;
+    color:maroon;
+}
+#listBenefits>li{
+    float:none;
+    width: 100%;
+}
 
+#quote{
+    position:absolute;
+    top:2150px;
+    left:15%;
+    width:70%;
+    height:auto;
+    font-size: x-large;
+    font-style: italic;
+    background:yellow;
+    text-align: center;
+}
+#quote:hover{
+    left:0;
+    width:100%;
+}
+.images{
+    width:50%;
+    height:500px;
+    position:absolute;
+    top:2180px;
+    border:2px solid midnightblue;
+    box-sizing: border-box;
+    display: block;
+}
+#im1{
+    left:0;
+}
+#im2{
+    left:50%;
 }

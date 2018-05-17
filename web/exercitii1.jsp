@@ -46,10 +46,10 @@
                 <a href="chat.jsp">Chat</a>
             </li>
             <li id="lisubmenu">
-                <div>Exercitii</div>
+                <div  class="current">Exercitii</div>
                 <ul id="submenu">
                     <li>
-                        <a href="exercitii1.jsp">Exercitii1</a>
+                        <a href="exercitii1.jsp" class="current">Exercitii1</a>
                     </li>
                     <li>
                         <a href="exercitii2.jsp">Exercitii2</a>

@@ -44,4 +44,6 @@ function loginclick(){
     var stil = window.getComputedStyle(form);
     if(stil.display === "none") form.style.display="block";
     else form.style.display="none";
+    var text = document.getElementById("text");
+    text.style.mixBlendMode = "exclusion";
 }

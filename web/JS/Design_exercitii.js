@@ -3,7 +3,9 @@
  */
 window.onload = function(){
 
-    var container = document.getElementById("container");
+    document.getElementById("miniavatar").src = avatar;
+
+    /*var container = document.getElementById("container");
     var userdata = document.getElementById("userdata");
     var miniavatar = document.getElementById("miniavatar");
     var welcome = document.createElement("p");

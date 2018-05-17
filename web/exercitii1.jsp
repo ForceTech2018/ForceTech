@@ -24,7 +24,6 @@
     <script src="JS/Design_exercitii.js"></script>
 </head>
 <body>
-<div id="blur"></div>
 <div id="header">
     <img id="logo" src="IMG/banner.png" alt="logo">
     <div id="bara"></div>
@@ -65,12 +64,14 @@
         </ul>
     </nav>
 </div>
-<div class="container">
+
     <p>To get fit</p>
-    <div class="togetfit">
-        <div class="exercitiu">
+    <div class="togetfit" id="div1">
+        <input class="checkbox" type="checkbox" >
+        <div class="pozaexercitiu">
             <img class="togetfit1" src="IMG/Exercises - pictures/GetFit/Superman-Exercise.jpg" alt="Superman Exercise"/>
         </div>
+        <br>
         <div class="descriere1">
             <b> Superman exercise:</b> After the W lifts turn around and face the ground.
             Stretch yourself on the ground by keeping your hands and legs straight.
@@ -78,11 +79,11 @@
             While doing this try to keep yourself as straight as possible. Repeat lifting your thighs and chest off the ground for 30 seconds.
             This exercise is extremely effective to tone your belly.
         </div>
-        <label class="check"><input type="checkbox" ></label>
+        <br>
     </div>
-
-    <div class="togetfit">
-        <div class="exercitiu">
+    <div class="togetfit" id="div2">
+        <input class="checkbox" type="checkbox">
+        <div class="pozaexercitiu">
             <img class="togetfit1" src="IMG/Exercises - pictures/GetFit/Push-up-and-Knee-Kick-Exercise.jpg" alt="Push-up-and-Knee-Kick-Exercise"/>
         </div>
         <div class="descriere1">
@@ -98,12 +99,27 @@
             Begin with a push-up, go for the knee kicks and then do a push up again.
             This will build strength in your arms and core.
         </div>
-        <label class="check"><input type="checkbox"></label>
     </div>
-
-
+<div id="mesaj">
+    <p> Antreneaza-te cu cei mai buni! Incearca unul dintre videoclipurile recomandate!</p>
 </div>
+<div class="divvideo">
+<a class="video" target="_blank" href="https://www.youtube.com/watch?v=JWy2-Dz7vJo">
+    <div class="tooltip">
+        <img alt="Tutorial Youtube" src="/IMG/Exercises - pictures/GetFit/video1.PNG">
+        <span class="tooltiptext">20 Minute HIIT Workout with Warm Up and Cool Down </span>
+    </div>
+</a>
+</div>
+<div id="video2">
+    <a class="video" target="_blank" href="https://www.youtube.com/watch?v=MrV4vCotio0">
+        <div class="tooltip">
+            <img alt="Tutorial Youtube" src="/IMG/Exercises - pictures/GetFit/video2.PNG">
+            <span class="tooltiptext">10 Minute Abs Workout - Fitness Blender Abs and Obliques Routine </span>
+        </div>
 
+    </a>
+</div>
 <footer>Echipa ForceTech ® All rights reserved!</footer>
 </body>
 </html>

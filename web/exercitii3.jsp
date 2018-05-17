@@ -9,8 +9,15 @@
 <html>
 <head>
     <title>Pagina 3 de exercitii</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
 </head>
 <body>
-
+<footer>
+    <div>
+        <p class="Contact"> ForceTech ® All rights reserved. Find us here!</p>
+        <img id="facebook" src="/IMG/fbcontact.png" alt="facebook">
+        <img id="twitter" src="/IMG/twittercontact.png" alt="twitter">
+    </div>
+</footer>
 </body>
 </html>

@@ -52,6 +52,7 @@ body{
     height:47%;
     top:44%;
     border-radius: 25px;
+    margin-bottom: 80px;
 }
 .tooltip{
     width:100%;
@@ -103,6 +104,6 @@ body{
     left:50%;
     width:40%;
     height:47%;
-    top:7%;
+    top:0;
     border-radius: 25px;
 }

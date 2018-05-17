@@ -127,6 +127,12 @@
     <img class="images" id="im2" src="IMG/Exercises - pictures/Yoga/yoga2.jpg" alt="Yoga exercise"/>
 
 </div>
-<footer>Echipa ForceTech ® All rights reserved!</footer>
+<footer>
+    <div>
+        <p class="Contact"> ForceTech ® All rights reserved. Find us here!</p>
+        <img id="facebook" src="/IMG/fbcontact.png" alt="facebook">
+        <img id="twitter" src="/IMG/twittercontact.png" alt="twitter">
+    </div>
+</footer>
 </body>
 </html>

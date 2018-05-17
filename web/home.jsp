@@ -66,6 +66,12 @@
 </div>
 <div class="container">
 </div>
-<footer>Echipa ForceTech ® All rights reserved!</footer>
+<footer>
+    <div>
+        <p class="Contact"> ForceTech ® All rights reserved. Find us here!</p>
+        <img id="facebook" src="/IMG/fbcontact.png" alt="facebook">
+        <img id="twitter" src="/IMG/twittercontact.png" alt="twitter">
+    </div>
+</footer>
 </body>
 </html>

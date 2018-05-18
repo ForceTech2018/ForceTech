@@ -3,5 +3,19 @@
     src: url("/FONTS/Capsule X Pro Medium UC.otf");
 }
 
+#welcome{
+    font-family: ForceTechFont;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
 
-
+p,ol{
+    position: relative;
+    text-indent: 30px;
+    text-align: justify;
+    font-family: "Palatino Linotype";
+    left:5%;
+    width:100%;
+    font-size: 18px;
+}

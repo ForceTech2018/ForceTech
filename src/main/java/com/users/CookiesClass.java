@@ -1,28 +1,28 @@
 package com.users;
 
 public class CookiesClass {
-    String user;
-    String pass;
-    String nowReg;
+    private String user;
+    private String pass;
+    private String nowReg;
     //security
-    String avatar_url;
-    String nume;
-    String prenume;
-    String email;
+    private String avatar_url;
+    private String nume;
+    private String prenume;
+    private String email;
     //personal
-    String sex;
-    String varsta;
-    String inaltime;
-    String greutate;
-    String nivelact;
-    String tipact;
+    private String sex;
+    private String varsta;
+    private String inaltime;
+    private String greutate;
+    private String nivelact;
+    private String tipact;
     //String feedback;
 
     public String getSex() {
         return sex;
     }
 
-    public void setSex(String sex) {
+    void setSex(String sex) {
         this.sex = sex;
     }
 
@@ -30,7 +30,7 @@ public class CookiesClass {
         return varsta;
     }
 
-    public void setVarsta(String varsta) {
+    void setVarsta(String varsta) {
         this.varsta = varsta;
     }
 
@@ -38,7 +38,7 @@ public class CookiesClass {
         return inaltime;
     }
 
-    public void setInaltime(String inaltime) {
+    void setInaltime(String inaltime) {
         this.inaltime = inaltime;
     }
 
@@ -46,7 +46,7 @@ public class CookiesClass {
         return greutate;
     }
 
-    public void setGreutate(String greutate) {
+    void setGreutate(String greutate) {
         this.greutate = greutate;
     }
 
@@ -54,7 +54,7 @@ public class CookiesClass {
         return nivelact;
     }
 
-    public void setNivelact(String nivelact) {
+    void setNivelact(String nivelact) {
         this.nivelact = nivelact;
     }
 
@@ -62,17 +62,9 @@ public class CookiesClass {
         return tipact;
     }
 
-    public void setTipact(String tipact) {
+    void setTipact(String tipact) {
         this.tipact = tipact;
     }
-
- /*   public String getFeedback() {
-        return feedback;
-    }
-
-    public void setFeedback(String feedback) {
-        this.feedback = feedback;
-    }*/
 
     public String getNume() {
         return nume;
@@ -102,7 +94,7 @@ public class CookiesClass {
         return avatar_url;
     }
 
-    public void setAvatar_url(String avatar_url) {
+    void setAvatar_url(String avatar_url) {
         this.avatar_url = avatar_url;
     }
 
@@ -124,7 +116,7 @@ public class CookiesClass {
         this.pass = pass;
     }
 
-    public void setNowReg(String nowReg) {
+    void setNowReg(String nowReg) {
         this.nowReg = nowReg;
     }
 }

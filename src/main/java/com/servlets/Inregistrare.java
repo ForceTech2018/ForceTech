@@ -10,27 +10,27 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet(name = "inregistrare")
-public class inregistrare extends HttpServlet {
+@WebServlet(name = "Inregistrare")
+public class Inregistrare extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("Inregistrare");
         String user=request.getParameter("name");
         String pass=request.getParameter("pass");
         String email=request.getParameter("email");
-        UserData userOb = new UserData();
+        UserData userData = new UserData(user,pass);
         try {
-            if(userOb.isValidUser(user,pass,"user")){
+            userData.createConnection();
+            if(userData.isValidUser("user")){
                 request.setAttribute("errorregister","Contul deja exista!");
                 request.getRequestDispatcher("/register.jsp").forward(request,response);
             }
             else{
-                userOb.registerUser(user,pass);
-                userOb.setValueOf(user,pass,"email",email);
+                userData.registerUser();
+                userData.setValueOf("email",email);
                 response.sendRedirect("/index.jsp");
             }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+            userData.closeConnection();
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }

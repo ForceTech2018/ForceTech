@@ -7,7 +7,7 @@
     <!-- START LOGGIN SERVLET -->
     <servlet>
         <servlet-name>logare</servlet-name>
-        <servlet-class>com.servlets.logare</servlet-class>
+        <servlet-class>com.servlets.Logare</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -18,7 +18,7 @@
     <!-- START REGISTER SERVLET -->
     <servlet>
         <servlet-name>inregistrare</servlet-name>
-        <servlet-class>com.servlets.inregistrare</servlet-class>
+        <servlet-class>com.servlets.Inregistrare</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -29,7 +29,7 @@
     <!-- START LOGOUT SERVLET -->
     <servlet>
         <servlet-name>logout</servlet-name>
-        <servlet-class>com.servlets.logout</servlet-class>
+        <servlet-class>com.servlets.Logout</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -40,22 +40,19 @@
     <!-- START PROFILE SERVLET -->
     <servlet>
         <servlet-name>profile</servlet-name>
-        <servlet-class>com.servlets.profile</servlet-class>
+        <servlet-class>com.servlets.Profile</servlet-class>
     </servlet>
 
     <servlet-mapping>
         <servlet-name>profile</servlet-name>
-        <url-pattern>/securityprofile</url-pattern>
+        <url-pattern>/profile</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>profile</servlet-name>
-        <url-pattern>/personalprofile</url-pattern>
-    </servlet-mapping>
+
 
     <!-- START LOG FILTER -->
     <filter>
         <filter-name>logFilter</filter-name>
-        <filter-class>com.filters.logFilter</filter-class>
+        <filter-class>com.filters.LogFilter</filter-class>
     </filter>
 
     <filter-mapping>
@@ -91,10 +88,21 @@
     <!-- START PROFILE FILTER -->
     <filter>
         <filter-name>profileFilter</filter-name>
-        <filter-class>com.filters.profileFilter</filter-class>
+        <filter-class>com.filters.ProfileFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>profileFilter</filter-name>
         <url-pattern>/profile.jsp</url-pattern>
     </filter-mapping>
+
+    <!-- SESSION -->
+
+    <listener>
+        <description>sessionListener</description>
+        <listener-class>com.session.SessionHandler</listener-class>
+    </listener>
+
+    <session-config>
+        <session-timeout>15</session-timeout>
+    </session-config>
 </web-app>

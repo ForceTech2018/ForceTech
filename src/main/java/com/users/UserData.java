@@ -5,24 +5,33 @@ import com.DB.DB_user;
 import java.sql.SQLException;
 
 public class UserData {
-    public boolean isValidUser(String user,String pass, String caut) throws SQLException, ClassNotFoundException {
-        DB_user object = new DB_user();
-        return object.isValidLogin(user,pass,caut);
+    private DB_user db_user;
+
+    public UserData(String name, String pass) {
+         db_user = new DB_user(name,pass);
     }
 
-    public void registerUser(String user, String pass) throws SQLException, ClassNotFoundException {
-        DB_user object = new DB_user();
-        object.isRegistered(user,pass);
+    public void createConnection() throws SQLException, ClassNotFoundException {
+        db_user.createConnection();
     }
 
-    public String getValueOf(String user, String pass, String value) throws SQLException, ClassNotFoundException {
-        DB_user object = new DB_user();
-        String result=object.getValue(user,pass,value);
-        return result;
+    public void closeConnection() throws SQLException {
+        db_user.closeConnection();
     }
 
-    public void setValueOf(String user, String pass, String value1, String value2) throws SQLException, ClassNotFoundException {
-        DB_user object = new DB_user();
-        object.setValue(user,pass,value1,value2);
+    public boolean isValidUser(String caut) throws SQLException, ClassNotFoundException {
+        return db_user.isValidLogin(caut);
+    }
+
+    public void registerUser() throws SQLException, ClassNotFoundException {
+        db_user.registerUser();
+    }
+
+    public String getValueOf(String value) throws SQLException, ClassNotFoundException {
+        return db_user.getValue(value);
+    }
+
+    public void setValueOf(String value1, String value2) throws SQLException, ClassNotFoundException {
+        db_user.setValue(value1,value2);
     }
 }

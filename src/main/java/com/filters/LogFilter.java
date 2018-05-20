@@ -7,25 +7,22 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-/**
- * Created by CristyBv on 26-Mar-18.
- */
-@WebFilter(filterName = "logFilter")
-public class logFilter implements javax.servlet.Filter {
+@WebFilter(filterName = "LogFilter")
+public class LogFilter implements javax.servlet.Filter {
     public void destroy() {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        System.out.println("logFilter");
+        System.out.println("LogFilter");
+
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
         CheckCookies check = new CheckCookies();
         CookiesClass cook = check.isLogged(request, response);
-        /*Cookie[] cc=request.getCookies();
-        for(Cookie c:cc) System.out.println(c.getName()+" "+c.getValue());*/
 
         String path = request.getHeader("Referer");
         String[] pat;
@@ -50,8 +47,13 @@ public class logFilter implements javax.servlet.Filter {
             response.sendRedirect("/index.jsp");
 
         } else if (cook.getNowReg().compareTo("1") == 0) {
-            response.sendRedirect("/profile.jsp");
+            response.sendRedirect("/Profile.jsp");
         }  //este proaspat inregistrat, deci trebuie completat profilul mai intai
+        else {
+            HttpSession session = request.getSession(false);
+            if(session != null)
+                if(session.getAttribute("user") == null) response.sendRedirect("/logout");
+        }
 
         if(pathgo.compareTo("/chat.jsp") == 0) {
             request.setAttribute("nume",cook.getNume());
@@ -59,7 +61,6 @@ public class logFilter implements javax.servlet.Filter {
         }
 
         request.setAttribute("avatar", cook.getAvatar_url());
-
 
         chain.doFilter(request, response);
 

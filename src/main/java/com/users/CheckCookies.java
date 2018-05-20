@@ -43,7 +43,7 @@ public class CheckCookies {
         }
         return cook;
     }
-    public boolean allGood(HttpServletRequest request, HttpServletResponse response){
+    public boolean allGood(HttpServletRequest request){
         boolean ok=true;
         Cookie[] cookies = request.getCookies();
         if(cookies!=null)

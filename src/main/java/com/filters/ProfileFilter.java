@@ -11,22 +11,19 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-/**
- * Created by CristyBv on 04-Apr-18.
- */
-@WebFilter(filterName = "profileFilter")
-public class profileFilter implements javax.servlet.Filter {
+@WebFilter(filterName = "ProfileFilter")
+public class ProfileFilter implements javax.servlet.Filter {
     public void destroy() {
     }
 
     public void doFilter(ServletRequest req, ServletResponse resp, FilterChain chain) throws ServletException, IOException {
-        System.out.println("profileFilter");
+        System.out.println("ProfileFilter");
         HttpServletRequest request = (HttpServletRequest) req;
         HttpServletResponse response = (HttpServletResponse) resp;
 
         CheckCookies check=new CheckCookies();
         CookiesClass cook = check.isLogged(request,response);
-        UserData obj = new UserData();
+        UserData userData = new UserData(cook.getUser(),cook.getPass());
 
         if(cook.getUser()!=null && cook.getPass()!=null) {
             request.setAttribute("avatar", cook.getAvatar_url());
@@ -40,13 +37,14 @@ public class profileFilter implements javax.servlet.Filter {
             request.setAttribute("nivelact",cook.getNivelact());
             request.setAttribute("tipact",cook.getTipact());
             try {
-                String feedback = obj.getValueOf(cook.getUser(),cook.getPass(),"feedback");
+                userData.createConnection();
+                String feedback = userData.getValueOf("feedback");
                 request.setAttribute("feedback",feedback);
-            } catch (SQLException e) {
-                e.printStackTrace();
-            } catch (ClassNotFoundException e) {
+                userData.closeConnection();
+            } catch (SQLException | ClassNotFoundException e) {
                 e.printStackTrace();
             }
+
         }
         else response.sendRedirect("/index.jsp");
         chain.doFilter(request, response);

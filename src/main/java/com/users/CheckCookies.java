@@ -37,8 +37,8 @@ public class CheckCookies {
                     cook.setNivelact(c.getValue());
                 if(c.getName().equals("tipact"))
                     cook.setTipact(c.getValue());
-                /*if(c.getName().equals("feedback"))
-                    cook.setFeedback(c.getValue());*/
+                if(c.getName().equals("medalii"))
+                    cook.setMedalii(c.getValue());
             }
         }
         return cook;

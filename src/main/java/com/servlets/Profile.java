@@ -10,6 +10,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Objects;
@@ -194,6 +195,8 @@ public class Profile extends HttpServlet {
 
             if(!Objects.equals(feedback, "")) {
                 userData.setValueOf("feedback", feedback);
+                HttpSession session = request.getSession(false);
+                session.setAttribute("feedback",feedback);
             }
 
             if(check.allGood(request)) {
@@ -213,7 +216,7 @@ public class Profile extends HttpServlet {
         }
 
         request.setAttribute("succes","Profilul a fost updatat!");
-        request.getRequestDispatcher("/Profile.jsp").forward(request,response);
+        request.getRequestDispatcher("/profile.jsp").forward(request,response);
 
 }
 

@@ -1,14 +1,14 @@
 
 window.onload = function(){
     document.getElementById("miniavatar").src = avatar;
-    //document.getElementById("messagesWrite").value=nume+prenume;
+    document.getElementById("stats").innerHTML = "Medalii: " + medalii;
     var nume;
     do{
         nume = window.prompt("Choose your nickname: ","User");
     }while(nume === null);
     document.getElementById("messagesWrite").value=nume;
     setTimeout(function(){sendMessage();},500);
-}
+};
 
 var websocket = new WebSocket("ws://localhost:8080/chatserver");
 
@@ -21,10 +21,10 @@ websocket.onmessage = function processMessage(message) {
             document.getElementById("usersChat").innerHTML = null;
             for(var i=0; i<useri.length-1;i++)
             {
-                var paragraf = document.createElement("P");
-                paragraf.className = "mesajeUsers";
-                paragraf.innerHTML = useri[i] + "<br>";
-                document.getElementById("usersChat").appendChild(paragraf);
+                var paragraf1 = document.createElement("P");
+                paragraf1.className = "mesajeUsers";
+                paragraf1.innerHTML = useri[i] + "<br>";
+                document.getElementById("usersChat").appendChild(paragraf1);
             }
         }
         else{
@@ -39,7 +39,7 @@ websocket.onmessage = function processMessage(message) {
         alert("Nickname-ul deja exista!");
         location.reload();
     }
-}
+};
 
 function sendMessage() {
     var message = document.getElementById("messagesWrite");

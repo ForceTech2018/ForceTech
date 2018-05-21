@@ -61,6 +61,7 @@ public class LogFilter implements javax.servlet.Filter {
         }
 
         request.setAttribute("avatar", cook.getAvatar_url());
+        request.setAttribute("medalii", cook.getMedalii());
 
         chain.doFilter(request, response);
 

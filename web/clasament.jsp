@@ -1,23 +1,20 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Chat - ForceTech</title>
+    <title>Clasament - ForceTech</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
-    <link rel="stylesheet" type="text/css" href="CSS/chat.css"/>
+    <link rel="stylesheet" type="text/css" href="CSS/clasament.css"/>
     <link rel="shortcut icon" type="image/png" href="IMG/favicon.png"/>
     <meta charset="UTF-8">
-    <meta name="description" content="Pagina de home">
+    <meta name="description" content="Clasamentul ForceTech">
     <meta name="keywords" content="forcetech, sport, welcome, home">
     <meta name="author" content="ForceTech">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>
         var avatar = '${avatar}';
-        var nume = '${nume}';
-        var prenume = '${prenume}';
         var medalii = '${medalii}';
     </script>
-    <script src="JS/chat.js"></script>
+    <script src="JS/home.js"></script>
 </head>
 <body>
 <div id="blur"></div>
@@ -40,7 +37,7 @@
                 <a href="home.jsp">Home</a>
             </li>
             <li>
-                <a href="chat.jsp" class="current">Chat</a>
+                <a href="chat.jsp">Chat</a>
             </li>
             <li id="lisubmenu">
                 <div>Exercitii</div>
@@ -62,18 +59,7 @@
         </ul>
     </nav>
 </div>
-<div class="container">
-    <label id="fereastra">
-        <p id="p1">ForceTech</p>
-        <p id="p2">CHAT</p>
-        <div id="messagesChat"></div>
-        <div id="usersChat"></div>
-        <label id="inputs">
-            <textarea id="messagesWrite" onfocus="sendEnter();" onblur="sendEnter();"> </textarea>
-            <input type="button" id="send" value="Send" onclick="sendMessage()"/>
-        </label>
-    </label>
-</div>
+<div class="container"> </div>
 <footer>
     <div>
         <p class="Contact"> ForceTech ® All rights reserved. Find us here!</p>

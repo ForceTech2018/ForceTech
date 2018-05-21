@@ -1,8 +1,4 @@
 //noinspection JSAnnotator
-/**
- * Created by CristyBv on 01-Apr-18.
- */
-
 window.onload = function(){
 
 
@@ -14,6 +10,8 @@ window.onload = function(){
     var container = document.getElementById("container");
     var userdata = document.getElementById("userdata");
     var miniavatar = document.getElementById("miniavatar");
+    var stats = document.getElementById("stats");
+
     if(errorLogin==1){
         var welcome = document.createElement("p");
         welcome.innerText = "Buna, " + nume + "!";
@@ -24,6 +22,8 @@ window.onload = function(){
         butonStart.style.display = "block";
         miniavatar.src = avatar;
         miniavatar.style.display = "block";
+        stats.style.display = "block";
+        stats.innerHTML = "Medalii: "+medalii;
     }
     else{
         var butonLogin = document.createElement("BUTTON");
@@ -36,7 +36,7 @@ window.onload = function(){
 
    }
 
-}
+};
 
 function loginclick(){
 

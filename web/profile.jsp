@@ -30,20 +30,23 @@
         var notcorrectoldpass = '${notcorrectoldpass}';
         //succes
         var succes= '${succes}';
+
+        var medalii = '${medalii}';
     </script>
     <script src="JS/profile.js"></script>
 </head>
 <body>
 <div id="blur"></div>
 <div id="header">
-    <img id="logo" src="IMG/banner.png" alt="logo">
+    <img id="logo" src="IMG/banner.png" alt="logo" onclick="location.href = 'index.jsp';"/>
     <div id="bara"></div>
     <div id="userdata">
         <form action="/logout" method="post" id="formsubmit">
             <input class = "userdata" id="submit" type="submit" value="Logout"/>
         </form>
-        <img id="miniavatar"/>
+        <img id="miniavatar" src=""/>
         <button class="userdata" id="profile" onclick="location.href = 'profile.jsp';">Profil</button>
+        <div id="stats" onclick="location.href = 'clasament.jsp'"></div>
     </div>
 </div>
 <div id="meniu">

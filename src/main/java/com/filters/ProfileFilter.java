@@ -8,6 +8,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
@@ -23,7 +24,10 @@ public class ProfileFilter implements javax.servlet.Filter {
 
         CheckCookies check=new CheckCookies();
         CookiesClass cook = check.isLogged(request,response);
-        UserData userData = new UserData(cook.getUser(),cook.getPass());
+
+        HttpSession session = request.getSession(false);
+        String feedback = "";
+        if(session.getAttribute("feedback") != null) feedback = (String) session.getAttribute("feedback");
 
         if(cook.getUser()!=null && cook.getPass()!=null) {
             request.setAttribute("avatar", cook.getAvatar_url());
@@ -36,15 +40,8 @@ public class ProfileFilter implements javax.servlet.Filter {
             request.setAttribute("greutate",cook.getGreutate());
             request.setAttribute("nivelact",cook.getNivelact());
             request.setAttribute("tipact",cook.getTipact());
-            try {
-                userData.createConnection();
-                String feedback = userData.getValueOf("feedback");
-                request.setAttribute("feedback",feedback);
-                userData.closeConnection();
-            } catch (SQLException | ClassNotFoundException e) {
-                e.printStackTrace();
-            }
-
+            request.setAttribute("feedback",feedback);
+            request.setAttribute("medalii",cook.getMedalii());
         }
         else response.sendRedirect("/index.jsp");
         chain.doFilter(request, response);

@@ -1,5 +1,3 @@
-<%@ page import="java.util.Date" %>
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
   <head>
@@ -17,26 +15,26 @@
       var errorLogin = '${verif}';
       var nume = '${numeuser}';
       var avatar = '${avatar}';
+      var medalii = '${medalii}';
     </script>
     <script src="JS/index.js"></script>
+
     <!--//am declarat variabila errorLogin inainte de a deschide fisierul, deci va fi vizibila in fisierul index.js-->
   </head>
   <body>
   <div id="blur"></div>
-    <div id="header">
-        <img id="logo" src="IMG/banner.png" alt="logo">
-        <div id="bara"></div>
-        <div id="userdata">
-            <form action="/logout" method="post" id="formsubmit">
-                <input class = "userdata" id="submit" type="submit" value="Logout"/>
-            </form>
-            <img id="miniavatar"/>
-            <button class="userdata" id="profile" onclick="location.href = 'profile.jsp';">Profil</button>
-        </div>
-    </div>
-
-
-
+  <div id="header">
+      <img id="logo" src="IMG/banner.png" alt="logo" onclick="location.href = 'index.jsp';"/>
+      <div id="bara"></div>
+      <div id="userdata">
+          <form action="/logout" method="post" id="formsubmit">
+              <input class = "userdata" id="submit" type="submit" value="Logout"/>
+          </form>
+          <img id="miniavatar" src=""/>
+          <button class="userdata" id="profile" onclick="location.href = 'profile.jsp';">Profil</button>
+          <div id="stats" onclick="location.href = 'clasament.jsp'"></div>
+      </div>
+  </div>
     <div class="container">
         <p class="p1" id="motto"> Join us in a 360 degrees transformation! </p>
         <br>

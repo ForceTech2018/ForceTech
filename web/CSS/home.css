@@ -4,7 +4,7 @@
 }
 
 #welcome{
-    font-family: ForceTechFont;
+    font-family: ForceTechFont, serif;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -14,7 +14,7 @@ p,ol{
     position: relative;
     text-indent: 30px;
     text-align: justify;
-    font-family: "Palatino Linotype";
+    font-family: "Palatino Linotype", serif;
     left:5%;
     width:100%;
     font-size: 18px;

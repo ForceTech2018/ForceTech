@@ -4,6 +4,7 @@ public class CookiesClass {
     private String user;
     private String pass;
     private String nowReg;
+    private String medalii;
     //security
     private String avatar_url;
     private String nume;
@@ -118,5 +119,13 @@ public class CookiesClass {
 
     void setNowReg(String nowReg) {
         this.nowReg = nowReg;
+    }
+
+    public String getMedalii() {
+        return medalii;
+    }
+
+    public void setMedalii(String medalii) {
+        this.medalii = medalii;
     }
 }

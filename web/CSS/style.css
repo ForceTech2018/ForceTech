@@ -140,6 +140,13 @@ body{
     top:15%;
 }
 
+#stats{
+    width: 20%;
+    position: absolute;
+    top:40%;
+    left:30%;
+}
+
 #bara{
     position: relative;
     margin-top: 40px;
@@ -174,7 +181,7 @@ body{
     border-top-left-radius: 5%;
 }
 
-#submit , #profile{
+#submit , #profile, #stats{
 
     background-color: #4169E1;
     color: white;
@@ -191,7 +198,7 @@ body{
     transition-duration: 0.4s;
 }
 
-#submit:hover , #profile:hover {
+#submit:hover , #profile:hover, #stats:hover {
     background-color: white;
     color:#4169E1;
     border: 2px solid #4169E1;

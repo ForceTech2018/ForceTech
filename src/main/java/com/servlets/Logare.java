@@ -57,7 +57,7 @@ public class Logare extends HttpServlet {
 
                 session.setAttribute("feedback",userData.getValueOf("feedback"));
 
-                if(ok==1) response.sendRedirect("/Profile.jsp");
+                if(ok==1) response.sendRedirect("/profile.jsp");
                 else response.sendRedirect("/index.jsp");
             }
             else{

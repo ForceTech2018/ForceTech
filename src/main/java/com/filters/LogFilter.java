@@ -47,7 +47,7 @@ public class LogFilter implements javax.servlet.Filter {
             response.sendRedirect("/index.jsp");
 
         } else if (cook.getNowReg().compareTo("1") == 0) {
-            response.sendRedirect("/Profile.jsp");
+            response.sendRedirect("/profile.jsp");
         }  //este proaspat inregistrat, deci trebuie completat profilul mai intai
         else {
             HttpSession session = request.getSession(false);

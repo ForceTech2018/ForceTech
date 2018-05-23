@@ -9,8 +9,7 @@
     font-size: 20px;
     font-weight: bold;
 }
-
-p,ol{
+welcome>p,ol{
     position: relative;
     text-indent: 30px;
     text-align: justify;

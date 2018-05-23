@@ -9,12 +9,16 @@
     font-size: 20px;
     font-weight: bold;
 }
-welcome>p,ol{
+.pwelcome, #welcome>p, .sfat, .text, .link {
     position: relative;
     text-indent: 30px;
     text-align: justify;
     font-family: "Palatino Linotype", serif;
-    left:5%;
-    width:100%;
+    width: 80%;
+    margin-left:10%;
+    margin-right:10%;
     font-size: 18px;
 }
+
+
+

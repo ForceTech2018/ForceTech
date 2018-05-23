@@ -63,56 +63,57 @@
     <h1 id="welcome">
         Bine ai venit ! Îti multumim ca esti aici si ai incredere in noi ! Acum haide sa trecem la treaba !
     </h1>
-    <p>
+    <br>
+    <p class="pwelcome">
         Dacă nu ai apucat să te antrenezi astăzi, ține minte că nu este niciodată prea târziu, așa că te sfătuim să începi să o faci.
-        Ai o multitudine de exerciții din care poți<br> alege ceea ce iți dorești să faci astăzi.
+        Ai o multitudine de exerciții din care poți alege ceea ce iți dorești să faci astăzi.
         De asemenea, poți încerca să urmezi un program special gândit pentru nevoile tale, care iți va oferi rezultate garantate.<br>
     </p>
-    <p>
+    <p class="pwelcome">
         Mai departe îți oferim câteva <b>sfaturi nutriționale</b> importante pentru a obține performanțele dorite:
         <ol>
-            <li><b>1. Verifică-ți deficitul caloric</b></li>
+            <li class="sfat"><b>1. Verifică-ți deficitul caloric</b></li>
                 <br>
-                <div>
+                <div class="text">
                     Primul pas către o dietă de succes este stabilirea numărului de calorii pe care vrei să le ai în deficit la sfârșitul zilei.
                     Un mod foarte ușor de a-ți da seama<br> de acest număr este folosirea unui calculator <a href="https://tdeecalculator.net/" target="_blank">TDEE</a>.
                     Aceste calculatoare TDEE (Total Daily Energy Expenditure) stabilesc în funcție de greutatea corporală,<br> vârstă, înălțime și gradul
                     de activitate numărul de calorii pe care le arzi într-o zi normală.
                 </div>
-            <li><b>2. Hidratează-te</b></li>
+            <li class="sfat"><b>2. Hidratează-te</b></li>
                 <br>
-                <div> Este un sfat de care trebuie să ții cont întotdeauna, indiferent de țelul antrenamentului tău!
+                <div class="text"> Este un sfat de care trebuie să ții cont întotdeauna, indiferent de țelul antrenamentului tău!
                     Deshidratarea este foarte periculoasă, diminuându-ți viteza,<br> puterea de concentrare și încetinindu-ți metabolismul.
                     Acesta este un lucru pe care vrem să-l evităm cu orice cost.
                     Este recomandat să bei cel puțin 2 litri de apă<br> în fiecare zi.
                 </div>
-            <li><b>3. Consumă carbohidrații când trebuie</b></li>
+            <li class="sfat"><b>3. Consumă carbohidrații când trebuie</b></li>
                 <br>
-                <div>
+                <div class="text">
                     Carbohidrații trebuie luați cu ceva timp înaintea unui antrenament, asigurându-te astfel
                     că acești carbohidrați sunt consumați și nu se depun sub formă de<br> grăsime. Dacă ai un antrenament mai ușor,
                     vei consuma mai puțini carbohidrați, iar dacă vei avea unul foarte intens, vei lua mai mulți.
                 </div>
-            <li><b>4. Consumă mai multe fructe și legume</b></li>
+            <li class="sfat"><b>4. Consumă mai multe fructe și legume</b></li>
                 <br>
-                <div>
+                <div class="text">
                     Fructele și legumele sunt baza unei alimentații sănătoase. Ele sunt sărace în calorii și nutrienți,
                     ceea ce înseamnă că sunt bogate în vitamine, minerale,<br> antioxidanți și fibre.
                     Incercați să consumați un curcubeu de legume și fructe la fiecare masă a zilei.
                 </div>
         </ol>
     </p>
-    <p>
+    <p class="pwelcome">
         Urmează aceste sfaturi și, alături de programele propuse de noi, îți garantăm că stilul tău de viață se va îmbunătăți
         radical!
     </p>
     <br>
-    <p>
+    <p class="pwelcome">
         Alte articole recomandate:
-            <p><a href="https://www.sparkpeople.com/resource/nutrition_articles.asp?id=1074">1) Ce sa mancati inainte de un antrenament..</a></p>
-            <p><a href="https://www.sparkpeople.com/resource/nutrition_articles.asp?id=1082">2) Ce sa mancati dupa un antrenament..</a></p>
-            <p><a href="https://www.sparkpeople.com/blog/blog.asp?post=8_reasons_why_youre_not_losing_weight">3) 8 motive pentru care nu reusesti să slăbești</a> </p>
-            <p><a href="https://www.sparkpeople.com/blog/blog.asp?post=the_top_100_running_songs_of_all_time">4) Cele mai bune melodii pentru antrenament</a></p>
+            <p class="link"><a href="https://www.sparkpeople.com/resource/nutrition_articles.asp?id=1074">1) Ce sa mancati inainte de un antrenament..</a></p>
+            <p class="link"><a href="https://www.sparkpeople.com/resource/nutrition_articles.asp?id=1082">2) Ce sa mancati dupa un antrenament..</a></p>
+            <p class="link"><a href="https://www.sparkpeople.com/blog/blog.asp?post=8_reasons_why_youre_not_losing_weight">3) 8 motive pentru care nu reusesti să slăbești</a> </p>
+            <p class="link"><a href="https://www.sparkpeople.com/blog/blog.asp?post=the_top_100_running_songs_of_all_time">4) Cele mai bune melodii pentru antrenament</a></p>
     </p>
 </div>
 <footer>

@@ -12,6 +12,7 @@ window.onload = function(){
     var miniavatar = document.getElementById("miniavatar");
     var stats = document.getElementById("stats");
 
+
     if(errorLogin==1){
         var welcome = document.createElement("p");
         welcome.innerText = "Buna, " + nume + "!";

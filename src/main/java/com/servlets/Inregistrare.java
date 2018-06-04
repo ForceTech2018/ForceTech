@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.SQLException;
 
 @WebServlet(name = "Inregistrare")
@@ -21,13 +22,16 @@ public class Inregistrare extends HttpServlet {
         try {
             userData.createConnection();
             if(userData.isValidUser("user")){
-                request.setAttribute("errorregister","Contul deja exista!");
-                request.getRequestDispatcher("/register.jsp").forward(request,response);
+                response.setContentType("text/html");
+                PrintWriter out = response.getWriter();
+                out.write("<html><head><title>ForceTech - Register</title><script>alert('Contul deja exista'); location.replace('/index.jsp');</script></head><body></body></html>");
             }
             else{
                 userData.registerUser();
                 userData.setValueOf("email",email);
-                response.sendRedirect("/index.jsp");
+                response.setContentType("text/html");
+                PrintWriter out = response.getWriter();
+                out.write("<html><head><title>ForceTech - Register</title><script>alert('Inregistrare cu succes!'); location.replace('/index.jsp');</script></head><body></body></html>");
             }
             userData.closeConnection();
         } catch (SQLException | ClassNotFoundException e) {

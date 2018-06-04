@@ -34,6 +34,14 @@ window.onload = function(){
         butonLogin.style.display="block";
         userdata.appendChild(butonLogin);
 
+        var butonRegister = document.createElement("BUTTON");
+        butonRegister.className = "userdata";
+        butonRegister.id = "register";
+        butonRegister.onclick=registerclick;
+        butonRegister.innerHTML="Register";
+        butonRegister.style.display="block";
+        userdata.appendChild(butonRegister);
+
    }
 
 };
@@ -41,6 +49,15 @@ window.onload = function(){
 function loginclick(){
 
     var form = document.getElementById("loginform");
+    var stil = window.getComputedStyle(form);
+    if(stil.display === "none") form.style.display="block";
+    else form.style.display="none";
+    var text = document.getElementById("text");
+    text.style.mixBlendMode = "exclusion";
+}
+function registerclick(){
+
+    var form = document.getElementById("registerform");
     var stil = window.getComputedStyle(form);
     if(stil.display === "none") form.style.display="block";
     else form.style.display="none";

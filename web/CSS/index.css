@@ -14,7 +14,7 @@ p, h1{
     display: none;
 }
 
-#login, #start{
+#login, #start, #register{
     width: 150px;
     height: 75px;
     background-color: #4169E1;
@@ -33,7 +33,7 @@ p, h1{
     transition-duration: 0.4s;
 }
 
-#login:hover , #start:hover{
+#login:hover , #start:hover, #register:hover{
     background-color: white;
     color:#4169E1;
     border: 2px solid #4169E1;
@@ -44,7 +44,11 @@ p, h1{
     top:20px;
     left:20px;
 }
-
+#register{
+    position:absolute;
+    top:20px;
+    left: 175px;
+}
 #start{
     margin: auto;
 }
@@ -75,7 +79,7 @@ hr{
 
 /*login form*/
 
-#loginform{
+#loginform, #registerform{
     position: fixed;
     width:50%;
     height: 50%;
@@ -96,22 +100,25 @@ label{
     position: absolute;
 }
 
-#namelabel{
+#namelabel, #namelabel1{
     left:30%;
     top:30%;
 }
-#passlabel{
+#passlabel, #passlabel1{
     left:30%;
     top:45%;
 }
-
+#email{
+    left:30%;
+    top:60%;
+}
 input{
     margin-bottom: 10px;
     border: 2px solid #4169E1;
     margin-left:20px;
 }
 
-#submitlogin{
+#submitlogin, #submitregister{
     float:none;
     position: absolute;
     width: 150px;
@@ -119,10 +126,15 @@ input{
     border-radius: 10%;
     border: 2px solid white;
     left:40%;
+
+}
+#submitlogin{
     top:60%;
 }
-
-#submitlogin:hover{
+#submitregister{
+    top:75%;
+}
+#submitlogin:hover, #submitregister:hover{
     background-color: white;
     color:#4169E1;
     border: 2px solid #4169E1;

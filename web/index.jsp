@@ -61,6 +61,20 @@
                 <input type="submit" value="Login" id="submitlogin"/>
             </form>
         </div>
+
+        <div id="registerform">
+            <form action="/inregistrare" method="post">
+                <label id="namelabel1">Name: <input type="text" name="name" width="30"/></label>
+                <br>
+                <label id="passlabel1">Pass: <input type="password" name="pass" width="10"/></label>
+                <br>
+                <label id="email">Email: <input type="email" name="email" width="20"/></label>
+                <br>
+                <input type="submit" value="Register" id="submitregister"/>
+            </form>
+        </div>
+
+
     </div>
   </body>
 </html>
